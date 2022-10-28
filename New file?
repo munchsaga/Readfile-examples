@@ -1,0 +1,23 @@
+For line in f:
+	print (line)
+this will print all the lines line by line
+
+For line in f:
+	print(line)
+	f.readline()
+} this will print every second line
+For line in f reads the first line, assigns it to the line variable, 
+When you print line, the first line gets printed out
+The next lien in the code is f.readline, here, f.readline also reads the current line, so since you already read the first line, you will now read the second line and you don’t do anything with it, because yo9u don't print it
+So now you go back to the top, and have for line in f: and you are at the third line now, you print it with print(line), and read the fourth line without printing it, so you only print every other line.
+
+print(f.readlines()) [0])
+}You only print the first line
+you are reading the file at index 0 and printing it
+
+line = f.readline()
+For line in f:
+	print (line)
+} prints every line except for the first 
+line gets assigned the very first line in the file
+after this we have a for loop, and the food loop is also using line as a variable, so the line that we just assigned at the very beginning gets override, and since readline moves the cursor over, the for loop will begin on the second line
